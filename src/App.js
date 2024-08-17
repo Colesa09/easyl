@@ -1,9 +1,12 @@
-
 import './App.css';
+import HomePage from './views/HomePage/HomePage.js';
 
 function App() {
   return (
-    <h1>Hello World</h1>
+    <>
+      <HomePage />
+    </>
+    
   );
 }
 
