@@ -1,4 +1,4 @@
-import Header from '../../components/Header.js';
+import Header from '../../components/Header/Header.js';
 import Footer from '../../components/Footer.js';
 import PaintingPic from '../../assets/images/painting_main_image.jpg';
 import DrawingPic from '../../assets/images/drawing_main_image.jpg';
@@ -6,6 +6,7 @@ import LiteraturePic from '../../assets/images/literature_main_image.jpg';
 import MusicPic from '../../assets/images/music_main_image.jpg';
 import SculpturePic from '../../assets/images/sculpture_main_image.jpg';
 import TheaterPic from '../../assets/images/theater_main_image.jpg';
+import './HomePage.css';
 
 
 function Banner() {
@@ -31,18 +32,18 @@ function ArtFormButtons() {
     return (
         <div>
             {artforms.map((artform) =>
-            <div>
-                <img src={artform.imgSrc} alt={artform.alt} />
+            <button className='artform-main-button'>
+                <img src={artform.imgSrc} alt={artform.alt} className='artform-main-pic' />
                 <h3>{artform.name}</h3>
-            </div>
+            </button>
             )};
         </div>
     );
 }
 
-function MainPageButton () {
+function ExploreArtButton () {
     return (
-        <button className='artformButton'>Explore New Artform</button>
+        <button className='explore-button'>Explore New Artform</button>
     )
 }
 
@@ -56,7 +57,7 @@ function HomePage() {
         <div className='main'>
             <h2>Select Your Artform</h2>
             <ArtFormButtons />
-            <MainPageButton />
+            <ExploreArtButton />
         </div>
         <Footer />
       </>

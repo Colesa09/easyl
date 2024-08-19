@@ -1,0 +1,76 @@
+
+header {
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    grid-template-rows: 100%;
+    align-items: center;
+    padding: 5px 10px 5px 30px;
+    border-bottom: 7px solid #42007B;
+}
+
+header ul {
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+
+header li {
+    padding: 10px;
+    display: inline;
+    font-size: 1.6rem;
+    font-weight: 800;
+    
+}
+
+header li a {
+    color: #42007B;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #42007B;
+    color: #fff;
+  }
+
+
+
+.navLogo-pic {
+    width: 250px;
+    height: auto;
+}
+
+.search-bar-div {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    width: 300px;
+    height: 40px;
+    border-radius: 40px;
+    border: 3px solid #42007B;
+    box-shadow: 5px 5px 5px #dfdfdf;
+    font-size: large;
+    padding-left: 15px;
+    
+}
+
+.search-bar-icon {
+    width: 60px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 3px solid #42007B;
+    margin-left: -50px;
+
+}
+
+.search-bar:focus {
+    border: 3px solid #8E0DFF;
+  }
