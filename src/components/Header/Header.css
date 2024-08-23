@@ -8,7 +8,7 @@ header {
     grid-template-rows: 100%;
     align-items: center;
     padding: 5px 10px 5px 30px;
-    border-bottom: 7px solid #42007B;
+    border-bottom: 10px solid #42007B;
 }
 
 header ul {
@@ -61,16 +61,26 @@ header li a {
     
 }
 
-.search-bar-icon {
+.search-bar-div span {
     width: 60px;
-    height: auto;
+    height: 60px;
     background-color: #fff;
+    color: #42007B;
     border-radius: 50%;
     border: 3px solid #42007B;
     margin-left: -50px;
+    text-align: center;
+    align-content: center;
+}
+
+.search-bar-icon {
+    width: 40px;
+    height: auto;
+   
 
 }
 
 .search-bar:focus {
     border: 3px solid #8E0DFF;
+    box-shadow: 10px 10px 5px #8E0DFF;
   }

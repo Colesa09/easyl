@@ -30,12 +30,12 @@ function ArtFormButtons() {
     ];
 
     return (
-        <div className='artform-div'>
+        <div className='artform-outer-div'>
             {artforms.map((artform) =>
-            <div className='artform-main-button'>
+            <button className='artform-main-card'>
                 <img src={artform.imgSrc} alt={artform.alt} className='artform-main-pic' />
                 <h3>{artform.name}</h3>
-            </div>
+            </button>
             )};
         </div>
     );

@@ -1,7 +1,8 @@
 import React, {useState} from "react";
 import { Link } from 'react-router-dom';
 import MainLogo from "../../assets/logo/main_logo.png";
-import SearchIcon from "../../assets/icons/search_icon.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import "./Header.css";
 
 const SearchBar = () => {
@@ -20,10 +21,8 @@ const SearchBar = () => {
             placeholder="Search"
             onChange={handleChange}
             value={searchInput} />
-            <span><img src={SearchIcon} alt="" class="search-bar-icon"/></span>
+            <span><FontAwesomeIcon icon={faMagnifyingGlass} size='1x' className='search-bar-icon' /></span>
 
-            {/* WILL COME BACK TO THIS PER DOCS NEED TO DOWNLOAD PACKAGE TO USE ICONS
-                <FontAwesomeIcon icon={faMagnifyingGlass} /> */}
         </div>
     );
 }
