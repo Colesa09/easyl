@@ -1,0 +1,95 @@
+/* Banner Styling */
+.banner {
+    width: 100%;
+    margin: 0px auto 10px;
+    height: 280px;
+    padding: 0px 5px 10px;
+    background: url(../../assets/images/banner_image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    text-align: center;
+    color: #fff;
+    align-content: center;
+
+}
+
+.banner h1 {
+    margin: 15px 5px;
+    font-weight: 800;
+    font-size: 40px;
+    text-transform: uppercase;
+
+}
+
+.banner p {
+    margin: 20px 5px 10px;
+    font-weight: 800;
+    font-size: 28px;
+}
+
+/* Main Content Styling */
+
+.main {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    padding: 10px 5px;
+    
+}
+
+.main h2 {
+    color: #484C84;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.artform-div {
+    width: 100%;
+    height: 90px;
+    margin-bottom: 70px;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.artform-main-button {
+    width: 120px;
+    height: 100px;
+    margin: 0px 10px;
+    background-color: #fff;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+  
+}
+
+.artform-main-button h3 {
+    font-size: 20px;
+    color:#484C84;
+    margin: 5px;
+}
+
+.artform-main-pic {
+    width: 100%;
+    height: 100%;
+    border: 4px solid #484C84;
+    border-radius: 50%;
+    box-shadow: 0px 7px 5px #dfdfdf;
+}
+
+.explore-button {
+    margin: 10px auto;
+    width: 30%;
+    padding: 15px;
+    color:#fff;
+    background-color: #42007B;
+    border: 1px solid #42007B;
+    border-radius: 40px;
+    display: block;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+}

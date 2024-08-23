@@ -1,0 +1,38 @@
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 100%;
+    align-items: center;
+    padding: 10px 5px;
+    border-top: 15px solid #42007B;
+}
+
+.footerLogo {
+    width: 80%;
+    height: auto;
+    margin: 10px 5px;
+
+}
+
+.extraLinks {
+    width: 100%;
+    text-align: center;
+}
+
+.footerIcons {
+    display: inline-flex;
+    justify-content: center;
+    
+}
+
+.footerIcons p {
+    margin: 5px;
+}
+
+.icon-color-change {
+    color:#42007B;
+}

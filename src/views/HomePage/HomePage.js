@@ -1,5 +1,5 @@
 import Header from '../../components/Header/Header.js';
-import Footer from '../../components/Footer.js';
+import Footer from '../../components/Footer/Footer.js';
 import PaintingPic from '../../assets/images/painting_main_image.jpg';
 import DrawingPic from '../../assets/images/drawing_main_image.jpg';
 import LiteraturePic from '../../assets/images/literature_main_image.jpg';
@@ -11,7 +11,7 @@ import './HomePage.css';
 
 function Banner() {
     return (
-        <div className="banner_img">
+        <div className="banner">
             <h1>Creativity Doesn't Need Limits</h1>
             <p>Learn, create and grow <br/> your creative spark with Easyl.</p>
         </div>
@@ -30,12 +30,12 @@ function ArtFormButtons() {
     ];
 
     return (
-        <div>
+        <div className='artform-div'>
             {artforms.map((artform) =>
-            <button className='artform-main-button'>
+            <div className='artform-main-button'>
                 <img src={artform.imgSrc} alt={artform.alt} className='artform-main-pic' />
                 <h3>{artform.name}</h3>
-            </button>
+            </div>
             )};
         </div>
     );
