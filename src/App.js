@@ -3,15 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from './views/HomePage/HomePage.js';
 import InspirationPage from './views/Inspiration/Inspiration.js';
 import TipsPage from './views/TipsPage/TipsPage.js';
+import ExplorePage from './views/ExplorePage/ExplorePage.js';
 
-// function App() {
-//   return (
-//     <>
-//       <HomePage />
-//     </>
-    
-//   );
-// }
+
 
 function App() {
   return (
@@ -19,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" >
           <Route index element={<HomePage />} />
+          <Route path='explore' element={<ExplorePage />} />
           <Route path='inspiration' element={<InspirationPage />} />
           <Route path='tips' element={<TipsPage />} />
         </Route>
