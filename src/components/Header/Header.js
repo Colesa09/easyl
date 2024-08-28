@@ -29,9 +29,9 @@ const SearchBar = () => {
 
 function Header () {
     const navBar = [
-        {id: 'explore', name: 'Explore'},
-        {id: 'tips', name: 'Tips'},
-        {id: 'inspiration', name: 'Inspiration'}
+        {id: '/explore', name: 'Explore'},
+        {id: '/tips', name: 'Tips'},
+        {id: '/inspiration', name: 'Inspiration'}
     ];
 
     return (
