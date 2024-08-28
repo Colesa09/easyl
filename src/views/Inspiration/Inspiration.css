@@ -1,0 +1,36 @@
+
+
+.inspiration-main-image {
+    width: 80%;
+    height: auto;
+    margin: 10px auto;
+    border: 5px solid #9F9F9F;
+}
+
+.inspiration-main-content {
+    width: 80%;
+    display: grid;
+    margin: 5px auto;
+    grid-template-columns: 40% 60%;
+    
+}
+
+.inspiration-content {
+    width: 100%;
+    padding: 5px 10px;
+    text-align: left;
+
+}
+
+.inspiration-content h3 {
+    color: #484C84;
+    font-weight: 900;
+    font-size: 30px;
+    margin: 0px 5px;
+}
+
+.inspiration-content p {
+    font-size: 20px;
+    margin: 0px 5px;
+    color: #606060;
+}
