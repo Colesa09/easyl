@@ -1,0 +1,27 @@
+
+.slide-container {
+    width: 90%;
+    margin: 5px auto;
+
+}
+
+.explore-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.arrowLeft, .arrowRight {
+    color: #484C84;
+    background-color: #fff;
+    border: 2px solid #484C84;
+}
+
+.arrowLeft {
+    transform: rotate(270deg);
+}
+
+.arrowRight {
+    transform: rotate(90deg);
+}
