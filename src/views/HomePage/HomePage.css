@@ -49,7 +49,7 @@
 
 .artform-outer-div {
     width: 100%;
-    margin-bottom: 4%;
+    margin-bottom: 10px;
     display: inline-flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -58,21 +58,27 @@
 
 .artform-main-card {
     width: 150px;
-    height: 130px;
     margin: 5px 10px;
     background-color: #fff;
+    color:#484C84;
     border: none;
     text-align: center;
     text-decoration: none;
   
 }
 
+.artform-main-card:hover {
+    background-color: #39006B;
+    color: #fff;
+    
+}
+
 .artform-main-card h3 {
     font-size: 24px;
-    color:#484C84;
     margin: 5px;
     font-weight: 800;
 }
+
 
 .artform-main-pic {
     width: 100%;

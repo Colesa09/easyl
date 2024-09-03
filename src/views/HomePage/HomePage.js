@@ -1,11 +1,9 @@
+import React from 'react';
+import { useNavigate} from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 import Header from '../../components/Header/Header.js';
 import Footer from '../../components/Footer/Footer.js';
-import PaintingPic from '../../assets/images/painting_main_image.jpg';
-import DrawingPic from '../../assets/images/drawing_main_image.jpg';
-import LiteraturePic from '../../assets/images/literature_main_image.jpg';
-import MusicPic from '../../assets/images/music_main_image.jpg';
-import SculpturePic from '../../assets/images/sculpture_main_image.jpg';
-import TheaterPic from '../../assets/images/theater_main_image.jpg';
+import Artforms from '../ArtformPages/ArtformsData.js';
 import './HomePage.css';
 
 
@@ -20,19 +18,12 @@ function Banner() {
 }
 
 function ArtFormButtons() {
-    const artforms = [
-        {id: 'Painting', name: 'Painting', imgSrc: PaintingPic, alt:'painting pic'},
-        {id: 'Drawing', name: 'Drawing', imgSrc: DrawingPic, alt:'drawing pic'},
-        {id: 'Literature', name: 'Literature', imgSrc: LiteraturePic, alt:'literature pic'},
-        {id: 'Music', name: 'Music', imgSrc: MusicPic, alt:'music pic'},
-        {id: 'Sculpture', name: 'Sculpture', imgSrc: SculpturePic, alt:'sculpture pic'},
-        {id: 'Theater', name: 'Theater', imgSrc: TheaterPic, alt:'theater pic'},
-    ];
+    const navigate = useNavigate();
 
     return (
         <div className='artform-outer-div'>
-            {artforms.map((artform) =>
-            <button className='artform-main-card'>
+            {Artforms.map((artform) =>
+            <button type='button' className='artform-main-card' onClick={() => navigate(artform.path)}>
                 <img src={artform.imgSrc} alt={artform.alt} className='artform-main-pic' />
                 <h3>{artform.name}</h3>
             </button>
@@ -42,8 +33,10 @@ function ArtFormButtons() {
 }
 
 function ExploreArtButton () {
+    const navigate = useNavigate();
+    
     return (
-        <button className='explore-button'>Explore New Artform</button>
+        <button type='button' className='explore-button' onClick={() => navigate('artforms')}>Explore New Artform</button>
     )
 }
 
