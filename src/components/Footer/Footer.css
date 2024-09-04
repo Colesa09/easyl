@@ -18,10 +18,42 @@ footer {
 
 }
 
-.extraLinks {
+.footer-links {
     width: 100%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    
 }
+
+.footer-links ul {
+    width: 80%;
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-links li {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.footer-links li a {
+    color:#fff;
+    background-color: #42007B;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+  }
+
+  .footer-links li a:hover {
+    color:#6B0F1A;
+    background-color: #fff;
+  }
 
 .footerIcons {
     display: inline-flex;
