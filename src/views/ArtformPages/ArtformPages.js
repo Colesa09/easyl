@@ -1,9 +1,12 @@
 import { useParams } from 'react-router-dom';
 import Header from '../../components/Header/Header.js';
 import Footer from '../../components/Footer/Footer.js';
+import TipLogo from '../../assets/logo/tip_logo.png';
 import Artforms from './ArtformsData.js';
-import { TipCard } from '../TipsPage/TipsPage.js';
+import { tipDetails } from '../TipsPage/TipsPage.js';
 import './ArtformPages.css';
+
+
 
 export function ArtformPageInd() {
     const params = useParams();
@@ -34,17 +37,29 @@ export function ArtformPageInd() {
         );
     }
 
+    
+     function TipCard() {
+        const params = useParams();
+        let filteredTips = tipDetails.filter((tips) => tips.category === params.id);
+        let artformTip = filteredTips[Math.floor(Math.random()*5)];
+
+         return (
+            <div className='artform-tip-card' key={artformTip.id}>
+                <img src={TipLogo} alt='Tip Logo' className='tip-logo' />
+                <h3>Easyl Tip: {artformTip.category.toUpperCase()}</h3>
+                <p>{artformTip.details}</p>
+            </div>
+        );
+     }
+
     return (
         <>
             <Header />
             <div className='main artform-page'>
                 <ArtformBanner />
                 <ArtformGallery />
-                <div className='artformNav'>
-
-                </div>
-                <div className='artform-tip-card'>
-                <TipCard />
+                <div className='artform-tip-outer'>
+                    <TipCard />
                 </div>
                 
 
