@@ -4,7 +4,7 @@ import TipLogo from '../../assets/logo/tip_logo.png';
 import './TipsPage.css';
 
 
-function TipCard () {
+export function TipCard () {
 
     
     return (
