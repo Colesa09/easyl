@@ -1,3 +1,4 @@
+/*Styling for Individual Artform Pages such as Drawing, Painting and etc */
 .artform-page {
     display: grid;
     grid-template-columns: 25% 75%;
@@ -80,4 +81,67 @@
 .artform-tip-card p {
     font-size: 22px;
     margin: 5px 10px;
+}
+/*End of Styling for individual artform pages*/
+
+/*Start of Styling for Artform page*/
+.artform-page-gallery {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px 10px;
+    
+
+}
+
+.gallery-item {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.full-gallery-video {
+    width: 200px;
+    height: 160px;
+    border: 5px solid #484C84;
+    margin: 10px 5px;
+
+}
+
+.full-gallery-content {
+    margin: 5px 10px;
+    width: 50%;
+}
+
+.full-gallery-content h3 {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 10px 5px 0px;
+    color: #42007B;
+}
+
+.full-gallery-content p {
+    color: #606060;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.scroll-up-arrow {
+    position: sticky;
+    bottom: 70px;
+    z-index: 1;
+}
+
+.up-button {
+    background-color:#42007B;
+    border: 3px solid #606060;
+    border-radius: 50%;
+    padding: 10px 20px;
+    float: right;
+    margin-right: 35px;
+}
+
+.change-color {
+    color:#fff;
 }

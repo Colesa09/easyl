@@ -9,22 +9,64 @@ import TheaterPic from '../../assets/images/theater_main_image.jpg';
 
 //Painting Gallery import
 const imagesPainting = require.context('../../assets/images/painting-page-pic', false, /\.(png|jpe?g|svg)$/);
-const imageListPainting = imagesPainting.keys(imagesPainting).map(image => imagesPainting(image));
+const imageListPainting = imagesPainting.keys(imagesPainting).map((image, index) => ({
+    id: index, // Unique ID for each image (you can also use other unique values)
+    url: imagesPainting(image), // The resolved URL or module for the image
+    alt: `Image ${index + 1}`, // Alt text or any other description
+    title: 'Learn to Paint: A Step-by-Step Acrylic Landscape Tutorial',
+    description: "Welcome to our beginner-friendly acrylic painting tutorial! In this session, we'll guide you through the process of creating a stunning landscape painting from start to finish.",
+  }));
+
 //Drawing Gallery import
 const imagesDrawing = require.context('../../assets/images/drawing-page-pic', false, /\.(png|jpe?g|svg)$/);
-const imageListDrawing = imagesDrawing.keys(imagesDrawing).map(image => imagesDrawing(image));
+const imageListDrawing = imagesDrawing.keys(imagesDrawing).map((image, index) => ({
+    id: index, // Unique ID for each image (you can also use other unique values)
+    url: imagesDrawing(image), // The resolved URL or module for the image
+    alt: `Image ${index + 1}`, // Alt text or any other description
+    title: 'Drawing Tutorial: "Master the Basics of Portrait Drawing',
+    description: "Welcome to our beginner’s guide to portrait drawing! In this tutorial, you'll learn the fundamental techniques needed to create realistic and expressive portraits using simple materials like pencils and paper.",
+  }));
+
 //Literature Gallery import
 const imagesLiterature = require.context('../../assets/images/literature-page-pic', false, /\.(png|jpe?g|svg)$/);
-const imageListLiterature = imagesLiterature.keys(imagesLiterature).map(image => imagesLiterature(image));
+const imageListLiterature = imagesLiterature.keys(imagesLiterature).map((image, index) => ({
+    id: index, // Unique ID for each image (you can also use other unique values)
+    url: imagesLiterature(image), // The resolved URL or module for the image
+    alt: `Image ${index + 1}`, // Alt text or any other description
+    title: 'Literature Tutorial: "Creative Writing: Crafting Your First Short Story',
+    description: "Welcome to our creative writing tutorial! In this lesson, you'll learn the basics of storytelling and how to write an engaging short story from scratch.",
+  }));
+
 //Music Gallery import
 const imagesMusic = require.context('../../assets/images/music-page-pic', false, /\.(png|jpe?g|svg)$/);
-const imageListMusic = imagesMusic.keys(imagesMusic).map(image => imagesMusic(image));
+const imageListMusic = imagesMusic.keys(imagesMusic).map((image, index) => ({
+    id: index, // Unique ID for each image (you can also use other unique values)
+    url: imagesMusic(image), // The resolved URL or module for the image
+    alt: `Image ${index + 1}`, // Alt text or any other description
+    title: 'Music Tutorial: "Introduction to Piano Playing: Learn Your First Song',
+    description: "Welcome to our introductory piano tutorial! Designed for absolute beginners, this lesson will guide you through the basics of piano playing and help you learn your first simple song.",
+  }));
+
 //Sculpture Gallery import
 const imagesSculpture = require.context('../../assets/images/sculpture-page-pic', false, /\.(png|jpe?g|svg)$/);
-const imageListSculpture = imagesSculpture.keys(imagesSculpture).map(image => imagesSculpture(image));
+const imageListSculpture = imagesSculpture.keys(imagesSculpture).map((image, index) => ({
+    id: index, // Unique ID for each image (you can also use other unique values)
+    url: imagesSculpture(image), // The resolved URL or module for the image
+    alt: `Image ${index + 1}`, // Alt text or any other description
+    title: 'Sculpture Tutorial: "Create a Clay Sculpture: Step-by-Step for Beginners',
+    description: "Welcome to our beginner-friendly sculpture tutorial! In this lesson, you'll learn how to create a simple clay sculpture from start to finish, using basic tools and techniques.",
+  }));
+
 //Theater Gallery import
 const imagesTheater = require.context('../../assets/images/theater-page-pic', false, /\.(png|jpe?g|svg)$/);
-const imageListTheater = imagesTheater.keys(imagesTheater).map(image => imagesTheater(image));
+const imageListTheater = imagesTheater.keys(imagesTheater).map((image, index) => ({
+    id: index, // Unique ID for each image (you can also use other unique values)
+    url: imagesTheater(image), // The resolved URL or module for the image
+    alt: `Image ${index + 1}`, // Alt text or any other description
+    title: 'Theater Tutorial: "Introduction to Acting: Building Confidence on Stage',
+    description: "Welcome to our introductory acting tutorial! Whether you're new to theater or looking to refine your skills, this lesson will help you build confidence and discover the joy of performing.",
+  }));
+
 
 //Export Artforms array of objects
 const Artforms = [
