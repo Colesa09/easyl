@@ -4,8 +4,8 @@ import HomePage from './views/HomePage/HomePage.js';
 import InspirationPage from './views/Inspiration/Inspiration.js';
 import TipsPage from './views/TipsPage/TipsPage.js';
 import ExplorePage from './views/ExplorePage/ExplorePage.js';
-import ArtformPage from './views/ArtformPages/ArtformPages.js';
-import { ArtformPageInd } from './views/ArtformPages/ArtformPages.js';
+import ArtformPage from './views/ArtformPage/ArtformPage.js';
+import { ArtformPageInd } from './views/ArtformPage/ArtformPage.js';
 
 
 

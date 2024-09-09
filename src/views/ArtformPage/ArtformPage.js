@@ -6,7 +6,7 @@ import Artforms from './ArtformsData.js';
 import { tipDetails } from '../TipsPage/TipsPage.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
-import './ArtformPages.css';
+import './ArtformPage.css';
 
 
 
@@ -32,7 +32,7 @@ export function ArtformPageInd() {
         return (
             <div className='artform-video-gallery'>
                 {videoGallery.map((video) =>
-                    <img src={video} alt='' className='artform-video' />
+                    <img src={video.url} alt='' className='artform-video' key={video.id} />
                 )}
                 
             </div>
@@ -89,28 +89,30 @@ export default function ArtformPage() {
         )
     }
     
+            
+
     
-    
-        return (
-            <>
-                <Header />
-                <div className='main'>
-                    <div className='artform-page-gallery'>
-                    {Artforms.map((artform) =>
-                        artform.gallery.map((video) => 
-                        <div className='gallery-item'>
-                            <img src={video.url} alt='' key={video.id} className='full-gallery-video'/>
-                            <div className='full-gallery-content'>
-                                    <h3>{video.title}</h3>
-                                <p>{video.description}</p>
-                            </div>
+    return (
+        <>
+            <Header />
+            <div className='main'>
+                <div className='artform-page-gallery'>
+                
+                 {Artforms.map((artform) =>
+                    artform.gallery.map((video) => 
+                    <div className='gallery-item'>
+                        <img src={video.url} alt='' key={video.id} className='full-gallery-video'/>
+                        <div className='full-gallery-content'>
+                                <h3>{video.title}</h3>
+                            <p>{video.description}</p>
                         </div>
-                    ))}
                     </div>
-                    <ScrollUpArrow />
+                ))} 
                 </div>
-                <Footer />
-            </>
-        )
+                <ScrollUpArrow />
+            </div>
+            <Footer />
+        </>
+    )
 
 }

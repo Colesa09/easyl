@@ -1,9 +1,8 @@
 import React from 'react';
 import { useNavigate} from 'react-router-dom';
-import { Navigate } from 'react-router-dom';
 import Header from '../../components/Header/Header.js';
 import Footer from '../../components/Footer/Footer.js';
-import Artforms from '../ArtformPages/ArtformsData.js';
+import Artforms from '../ArtformPage/ArtformsData.js';
 import './HomePage.css';
 
 
