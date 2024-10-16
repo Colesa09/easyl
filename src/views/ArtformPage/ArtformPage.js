@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import Header from '../../components/Header/Header.js';
 import Footer from '../../components/Footer/Footer.js';
 import TipLogo from '../../assets/logo/tip_logo.png';
@@ -8,7 +8,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import './ArtformPage.css';
 
-
+//This file consist of two exported function. One for the indiividual artfrom page that is loaded based on clicking specific artform.
+//The other function load the Gallery page using all the pictures(videos) available from the ArtformsData.js file. 
 
 export function ArtformPageInd() {
     const params = useParams();
@@ -26,20 +27,22 @@ export function ArtformPageInd() {
      
         );
     }
-
+//Loades pictures(videos) of artforms based on the params id. Goes to the artformsData.js file to locate object that matches params id.
     function ArtformGallery() {
         let videoGallery = Artforms[artform].gallery;
         return (
             <div className='artform-video-gallery'>
                 {videoGallery.map((video) =>
-                    <img src={video.url} alt='' className='artform-video' key={video.id} />
+                    <Link to={`${video.path}`} >
+                        <img src={video.url} alt='' className='artform-video' key={video.id} />
+                    </Link>
                 )}
                 
             </div>
         );
     }
 
-    
+ //Uses the tipDetails array to filter down tips that are related to the artform page based on the params id.    
      function TipCard() {
         const params = useParams();
         let filteredTips = tipDetails.filter((tips) => tips.category === params.id);
@@ -101,7 +104,9 @@ export default function ArtformPage() {
                  {Artforms.map((artform) =>
                     artform.gallery.map((video) => 
                     <div className='gallery-item'>
-                        <img src={video.url} alt='' key={video.id} className='full-gallery-video'/>
+                        <Link to={`${artform.name.toLowerCase()}/${video.path}`} >
+                            <img src={video.url} alt={video.alt} key={video.id} className='full-gallery-video'/>
+                        </Link>
                         <div className='full-gallery-content'>
                                 <h3>{video.title}</h3>
                             <p>{video.description}</p>

@@ -1,0 +1,51 @@
+.tutorial-page {
+    display:inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    height: 600px;
+}
+
+.tutorial-video {
+    width: 70%;
+}
+
+.supplies-list {
+    width: 30%;
+    text-align: left;
+
+}
+
+.supplies-list ul {
+    line-height: 2.0;
+    font-size: 20px;
+    color: #484C84;
+    font-weight: 700;
+}
+
+.supplies-list p {
+    color: #6B0F1A;
+}
+
+.tutorial-buttons {
+    display: inline-flex;
+    width: 70%;
+    margin-left: 10px;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.tut-button {
+    margin: 20px;
+    width: 25%;
+    padding: 15px;
+    color:#fff;
+    background-color: #42007B;
+    border: 1px solid #42007B;
+    border-radius: 40px;
+    display: block;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
