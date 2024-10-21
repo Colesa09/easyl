@@ -1,4 +1,4 @@
-# Easyl
+# ![easyl_smaller](https://github.com/user-attachments/assets/1b9c2d6d-f604-4358-87a1-f0b2600cb0cc)
 Easyl is a website for finding and viewing artform tutorials targeted towards beginning artists. It is designed to make it easier for users to find specific tutorials based on art forms.
 Duration: 1 month 
 
