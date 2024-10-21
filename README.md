@@ -11,7 +11,7 @@ https://youtu.be/QR_6baOXFIc
   * CSS
   * HTML
 
-## Website Design MockUps
+## Website Screeenshots
 <img width="490" alt="homepage" src="https://github.com/user-attachments/assets/38d2de09-3c29-43eb-aa79-3888266537d1">
 <img width="490" alt="homepage2" src="https://github.com/user-attachments/assets/808b218f-f17e-4d24-8ecd-c8f2ab36983f">
 <img width="490" alt="painting" src="https://github.com/user-attachments/assets/391f786e-5fef-4106-992f-28759c3cf9f8">
