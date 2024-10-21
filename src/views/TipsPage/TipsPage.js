@@ -1,6 +1,8 @@
 import Header from '../../components/Header/Header.js';
 import Footer from '../../components/Footer/Footer.js';
 import TipLogo from '../../assets/logo/tip_logo.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import './TipsPage.css';
 
 
@@ -39,6 +41,19 @@ export const tipDetails = [
 
 
 function TipsPage() {
+  function ScrollUpArrow() {
+    const handleScrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth'});
+    }
+
+    return (
+        <div className='scroll-up-arrow'>
+            <button className='up-button' onClick={handleScrollToTop} >
+                <FontAwesomeIcon icon={faArrowUp} size='3x' className='change-color' />
+            </button>
+        </div>
+    )
+}
     
     return (
       <>
@@ -54,6 +69,7 @@ function TipsPage() {
                     </div>
                 )} 
             </div>
+            <ScrollUpArrow />
         </div>
         <Footer />
       </>

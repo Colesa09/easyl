@@ -30,7 +30,7 @@ function TutorialPage() {
             url: 'https://www.youtube.com/embed/9U61gnK8JEk?si=LMDh-nK5wba11ILN',
             supplies: ['Instrument of Choice (Piano)', 'Sheet Music', 'Positive Energy']
         },
-        {id: 'sculputre', 
+        {id: 'sculpture', 
             name: 'Sculpture Tutorial: "Create a Clay Sculpture: Step-by-Step for Beginners', 
             url: 'https://www.youtube.com/embed/1n7apcgQiz0?si=tEbgNxvNLuhXOobZ',
             supplies: ['Sculpting Tool Set', 'Sculpting Material', 'Flat Surface']
