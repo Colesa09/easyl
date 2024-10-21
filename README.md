@@ -3,6 +3,7 @@ Easyl is a website for finding and viewing artform tutorials targeted towards be
 Duration: 1 month 
 
 ## Video Demo
+https://youtu.be/QR_6baOXFIc
 
 ## Original Design Mockup
 ![Home Page](https://github.com/user-attachments/assets/aa7cc105-e2c4-474a-a760-690a18253d04)
